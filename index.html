@@ -2,23 +2,47 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>srpalko</title>
 </head>
 <body>
     <navbar id="navbar">
-        <a>Test Link </a>
-        <a id="profile-link" href="https://github.com/srpalko" target="_blank" rel="noreferrer noopener">GitHub</a>
+        <h2>myWork = () => {</h2>
+        <a class="link" href="#projects"><img class="logo" src="./icons/HTML-CSS_logo.png" style="width: 10rem;"/></a>
+        <a class="link"><img class="logo" src="./icons/JavaScript-logo.png" /></a>
+        <a class="link">
+            <div id="logo-combo">
+                <img src="icons/Bootstrap_logo.png"/>
+                <img src="icons/JQuery_logo-512.png"/>
+                <img src="icons/iconfinder_sass_308448.png"/>
+                <img src="icons/iconfinder_react_1296845.png"/>
+                <img src="icons/iconfinder_redux_4691205.png"/>
+            </div>
+        </a>
+        <a class="link" id="profile-link" href="https://github.com/srpalko" target="_blank" rel="noreferrer noopener">
+            <img class="logo" src="./icons/GitHub-Mark.png"/>
+        </a>
+        <h2>}</h2>
     </navbar>
     <section id="welcome-section">
         <h1 class="centered" >Steve Palko, software engineer in training</h1>
+        <p>My name is Steve Palko, and I am studting to be a software engineer. 
+            I'm not quite there yet, but here is some of my work.
+        </p>
     </section>
     <section id="projects">
-        <div id="project-tile">
-            <a>Here is a project</a>
+        <div class="project-tile" >
+            <iframe src="https://clock-sigma.vercel.app/"
+            height="400px" width="400px"></iframe>
         </div>
-
+        <div class="project-tile" >Project 2</div>
+        <div class="project-tile" >Project 3</div>
+        <div class="project-tile" >Project 4</div>
+        <div class="project-tile" >Project 5</div>
+        <div class="project-tile" >Project 6</div>
     </section>
 </body>
 </html>
