@@ -1,32 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="index.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Steve Palko Web Development Portfolio</title>
 </head>
-<body>  
+
+<body>
     <navbar id="navbar">
         <a href="#about-me">About Me</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
         <a id="profile-link" href="https://github.com/srpalko" target="_blank">GitHub</a>
-        <a href="https://www.freecodecamp.org/srp" target="_blank">freeCodeCamp</a>    
+        <a href="https://www.freecodecamp.org/srp" target="_blank">freeCodeCamp</a>
     </navbar>
     <main>
         <section id="welcome-section">
-            <h1>Stephen Palko</h1>
-            <h2>Software Development Portfolio</h2>
+            <div id="welcome-title">
+                <h1>Stephen Palko</h1>
+                <h2>Software Developer</h2>
+            </div>
         </section>
-        <section id="about-me">
-            <h2>About Me</h2>
-            <p>Hi, my name is Steve, and I am studying to be a software developer. 
-
-            </p>
-        </section>
+        <div id="about-div">
+            <section id="about-me">
+                <h2>About Me</h2>
+                <p>My name is Steve Palko. I am a self-taught software developer. The purpose of this website is to provide a place to showcase my work.
+                    In the projects section of the page you will find links to both the working apps and the GitHub repository containing their code.
+                    I mainly study and develop in HTML, CSS (and Sass), JavaScript, Python, Bootstrap, jQuery, Flask, React, and Redux. I am currently learning D3, JSON APIs and AJAX.
+    
+    
+                </p>
+            </section>
+            <section id="about-work">
+                <h2>About My Work</h2>
+                <p>
+                    My work is here.
+                </p>
+            </section>
+        </div>
         <section id="projects">
             <h2>Projects</h2>
             <div id="project-tile-container">
@@ -34,25 +50,40 @@
                     <a href="https://clock-sigma.vercel.app/" target="_blank">
                         <img class="screenshot" src="images/clock_screenshot.png" alt="screenshot of 25+5 clock app">
                         25+5 Clock
-                    </a>
+                    </a><br>
+                    <a href="https://github.com/srpalko/clock" target="_blank">[code]</a>
                 </div>
                 <div class="project-tile">
                     <a href="https://calculator-nu-seven.vercel.app/" target="_blank">
-                        <img class="screenshot" src="images/calculator_screenshot.png" alt="screenshot of JavaScript calculator app">
+                        <img class="screenshot" src="images/calculator_screenshot.png"
+                            alt="screenshot of JavaScript calculator app">
                         JavaScript Calculator
-                    </a>
+                    </a><br>
+                    <a href="https://github.com/srpalko/calculator" target="_blank">[code]</a>
                 </div>
                 <div class="project-tile">
                     <a href="https://drum-machine-self.vercel.app/" target="_blank">
-                        <img class="screenshot" src="images/drum_machine_screenshot.png" alt="screenshot of drum machine">    
+                        <img class="screenshot" src="images/drum_machine_screenshot.png"
+                            alt="screenshot of drum machine">
                         Drum Machine
-                    </a>
+                    </a><br>
+                    <a href="https://github.com/srpalko/drum-machine" target="_blank">[code]</a>
                 </div>
                 <div class="project-tile">
                     <a href="https://markdown-previewer-zeta.vercel.app/" target="_blank">
-                        <img class="screenshot" src="images/markdown_previewer_screenshot.png" alt="screenshot of markdown previewer">
+                        <img class="screenshot" src="images/markdown_previewer_screenshot.png"
+                            alt="screenshot of markdown previewer">
                         Markdown Previewer
-                    </a>
+                    </a><br>
+                    <a href="https://github.com/srpalko/markdown_previewer" target="_blank">[code]</a>
+                </div>
+                <div class="project-tile">
+                    <a href="https://srpalko.github.io/" target="_blank">
+                        <img class="screenshot" src="images/random_quote_screenshot.png"
+                            alt="screenshot of random quote machine app">
+                        Random Quote Machine
+                    </a><br>
+                    <a href="https://github.com/srpalko/srpalko.github.io" target="_blank">[code]</a>
                 </div>
             </div>
         </section>
@@ -63,4 +94,5 @@
         </footer>
     </main>
 </body>
+
 </html>
