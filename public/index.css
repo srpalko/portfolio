@@ -35,14 +35,18 @@ navbar {
     animation-duration: 4s;
     animation-fill-mode: backwards;
     animation-name: slide-bounce;
-    background-color: #eceeec91;
-    border: 1px solid #1f1e1e46;
-    box-shadow: 1px 1px 3px #222121cb;
     display: flex;
     justify-content: space-around;
     position: sticky;
     top: 0;
     will-change: transform;
+}
+
+.frame {
+    background-color: #eceeec91;
+    border: 1px solid #1f1e1e46;
+    box-shadow: 1px 1px 3px #222121cb;
+    padding: .3em;
 }
 
 footer {
@@ -54,11 +58,11 @@ footer {
 }
 
 #about-div {
+    align-items: center;
     display: flex;
     flex-direction: row;
     height: 100vh;
     justify-content: space-evenly;
-    padding-top: 40px;
 }
 
 #about-me {
@@ -76,17 +80,14 @@ footer {
 #projects {
     height: auto;
     margin-bottom: 10px;
-    padding-top: 30px;
+    padding-top: 50px;
 }
 
 #project-tile-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, 400px);
-    grid-gap: 10px 10px;
+    grid-gap: 30px 30px;
     justify-content: center;
-  
-    
-    
 }
 
 .project-tile {
