@@ -4,7 +4,8 @@
 }
 
 body {
-    background-color: #d9ecf5;
+   
+    background: linear-gradient(45deg, hsl(199, 39%, 45%), #d9ecf5);
 }
 
 h1 {
