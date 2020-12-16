@@ -4,7 +4,6 @@
 }
 
 body {
-   
     background: linear-gradient(45deg, hsl(199, 39%, 45%), #d9ecf5);
 }
 
@@ -31,11 +30,14 @@ p {
     font-size: 1.5em;
 }
 
-navbar {
+.home-navbar {
     animation-delay: 2s;
     animation-duration: 4s;
     animation-fill-mode: backwards;
     animation-name: slide-bounce;
+}
+
+navbar {
     display: flex;
     justify-content: space-around;
     position: sticky;
@@ -59,21 +61,12 @@ footer {
 }
 
 #about-div {
-    align-items: center;
     display: flex;
     flex-direction: row;
-    height: 100vh;
-    justify-content: space-evenly;
+
 }
 
 #about-me {
-    height: 80vh;
-    padding: 20px;
-    width: 50%;
-}
-
-#about-work {
-    height: 80vh;
     padding: 20px;
     width: 50%;
 }
@@ -81,7 +74,7 @@ footer {
 #projects {
     height: auto;
     margin-bottom: 10px;
-    padding-top: 50px;
+    padding-top: 10px;
 }
 
 #project-tile-container {
@@ -105,15 +98,19 @@ footer {
     margin-bottom: 4px;
 }
 
+.logo {
+    width: 1em;
+}
+
 #welcome-section {
     color: #222121cb;
-    height: 80vh;  
+    height: 80vh;
     text-align: center;
 }
 
 #welcome-title {
     animation-delay: 1s;
-    animation-duration:2s;
+    animation-duration: 2s;
     animation-fill-mode: forwards;
     animation-name: title-fade;
     border: 1px solid #222121cb;
@@ -124,17 +121,37 @@ footer {
     opacity: 0;
 }
 
+@media only screen and (max-width: 568px) {
+    #welcome-title {
+        font-size: 10px;
+        margin: auto;
+        width: 100%;
+    }
+
+    #welcome-section {
+        height: auto;
+        margin-top: 10px;
+    }
+
+    #about-div {
+        flex-direction: column;
+        font-size: 1em;
+        padding: 0px;
+    }
+
+    #about-me {
+        width: 100%;
+    }
+}
+
 @keyframes slide-bounce {
     from {
-        margin-left: 100%;
-         width: 300%; 
+        margin-left: 110%;
+        width: 300%;
     }
-
     50% {
         margin-left: -50%
-        
     }
-
     to {
         margin-left: 0%;
         width: 100%;
@@ -145,18 +162,17 @@ footer {
     from {
         opacity: 0;
     }
-
     to {
         background-color: #eceeec91;
         opacity: 1;
     }
-} 
-
+}
 
 @media screen and (max-width: 600px) {
     navbar {
         align-items: center;
         flex-direction: column;
+        font-size: .75em;
         position: static;
     }
 }
