@@ -1,0 +1,55 @@
+body {
+    background-color: #ddba7e6e;
+    color: #3A1B20;
+    font-family: 'Roboto', sans-serif
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 4em;
+    text-align: center;
+}
+
+#img-div {
+   display: flex;
+   flex-direction: column;
+}
+
+img {
+    align-self: center;
+    border-radius: 5px;
+    box-shadow: 10px 10px 6px #221f1a86;
+    margin-bottom: 10px;
+    width: 50%;
+}
+
+footer {
+    font-size: 1em;
+    margin: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ce3a4a
+}
+
+ul {
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+#img-caption {
+    align-self: center;
+    margin-bottom: 20px;
+}
+
+#tribute-info {
+    display: block;
+    font-size: 1.2rem;
+    margin: auto;
+    text-align: center;
+    width: 70%
+}
