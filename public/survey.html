@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="css/survey.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bass Survey</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Bass Survey</h1>
+        <p id="description">Tell us about your main axe!</p>
+    </header>
+    <form id="survey-form">
+        <div>
+            <label for="name" id="name-label">Your name</label>
+            <input class="text-input" id="name" type="text" placeholder="name">
+        </div>
+        <div>
+            <label for="email" id="email-label">Your email</label>
+            <input class="text-input" id="email" type="email" placeholder="email">
+        </div>
+        <div>
+            <label for="number" id="number-label">How many strings does your bass have?</label>
+            <input id="number" min="1" max="10" type="number" placeholder="#">
+        </div>
+        <div>
+            <label for="pickup-config">Pickup configuration</label>
+            <select id="dropdown" name="pickup-config">
+                <option value="P">Precision</option>
+                <option value="JJ">Jazz</option>
+                <option value="PJ">PJ</option>
+                <option value="MM">Stingray</option>
+                <option value="HH">Double Humbucker</option>
+            </select>
+        </div>
+        <fieldset id="scale">
+            <legend>Scale</legend>
+            <input type="radio" name="radio" id="34" value="34">
+            <label for="choice-1">34"</label>
+            <input type="radio" name="radio" id="35" value="35">
+            <label for="35">35"</label>
+            <input type="radio" name="radio" id="36" value="36">
+            <label for="36">36"</label>
+        </fieldset>
+
+        <fieldset id="controls">
+            <legend>Controls</legend>
+            <input type="checkbox" value="volume">
+            <label for="volume">Volume</label>
+            <input type="checkbox" value="check-2">
+            <label for="passive-tone">Passive Tone</label>
+            <input type="checkbox" value="active-eq">
+            <label for="active-eq">Active EQ</label>
+        </fieldset>
+
+        <textarea id="comments" placeholder="Additional comments"></textarea>
+        <input type="submit" id="submit">
+    </form>
+</body>
+
+</html>

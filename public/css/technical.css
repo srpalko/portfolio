@@ -1,0 +1,75 @@
+#main-doc {
+    font-family: 'Titillium Web', sans-serif;
+  }
+  #navbar {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 500px;
+    position: fixed;
+    width: 30%;
+  }
+  #navbar > header {
+    font-size: 25px;
+  }
+
+  nav > header {
+    margin: 10px;
+  }
+
+  #content {
+    border: 1px solid black;
+    margin-left: 30%;
+    padding: 5px;
+  }
+
+  header {
+      font-size: 2em;
+  }
+
+  code {
+      color: blue;
+      font-size: 1em;
+  }
+
+  a {
+      border: 1px solid black;
+      border-collapse: collapse;
+      color: black;
+      height: 4em;
+      margin: 3px;
+      padding: 5px;
+      width: 90%;
+      text-decoration: none;
+  }
+
+  a:hover {
+      animation-name: border-curve;
+      animation-duration: .75s;
+      animation-fill-mode: forwards;
+      background-color: white;
+      border: 1px solid rgb(194, 69, 69);
+      color: rgb(194, 69, 69);
+  }
+
+  @keyframes border-curve {
+      from {
+          background-color: white;
+          border-radius: 0px;
+      }
+
+      to {
+          background-color: rgb(236, 211, 199);
+          border-radius: 50px;
+      }
+      
+  }
+
+
+
+  @media (max-width: 500px) {
+    #navbar {
+      font-size: 12px;
+    }
+  }

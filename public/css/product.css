@@ -1,0 +1,98 @@
+body {
+    background-color: #EDE3F0;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(218, 121, 137);
+}
+
+input {
+    border-radius: 10px;
+    height: 40px;
+    text-align: center;
+}
+
+#header-img {
+    width: 100px;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 50%;
+    position: sticky;
+}
+
+#header {
+    font-family: "Gloria Hallelujah", cursive;
+    font-size: 50px;
+    background-color: white;
+    z-index: 2;
+    position: fixed;
+    width: 80%;
+    padding: 20px;
+    box-shadow: 2px 0 5px 2px #6B5970;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#nav-div {
+    font-size: 20px;
+}
+
+#main-content {
+    position: relative;
+    top: 200px;
+    z-index: 1;
+}
+
+#video {
+    display: block;
+    margin: auto;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 60px;
+    margin-bottom: 60px;
+}
+
+#link-sections {
+    font-family: "PT Sans Narrow", sans-serif;
+    font-size: 2em;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+}
+
+#ingredients {
+    background-color: #CAB3D1;
+    height: 100vh;
+    margin-top: 400px;
+    padding: 20px;
+}
+
+#flavors {
+    background-color: #A06AAF;
+    height: 100vh;
+    padding: 20px;
+}
+
+#endorsements {
+    background-color: #CAB3D1;
+    height: 100vh;
+    padding: 20px;
+}
+
+@media (max-width: 100px) {
+    #link-sections {
+        font-size: 10px;
+    }
+}
