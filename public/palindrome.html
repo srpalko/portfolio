@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="css/palindrome.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" 
+        crossorigin="anonymous"></script>
+    <title>Palindrome Checker</title>
+</head>
+<body>
+    <header>
+        <h1>Palindrome Checker</h1>
+        <p>A palindrome is a word, phrase, or sequence that reads the same backward as forward.<br>Type in a word, phrase, or number to find out if it is a palindrome. <br> Palindrome checker will ignore case, spaces and punctuation.</p>
+    </header>
+    
+    <section id="form">
+        <form id="palindrome-form">
+            <input id="text-to-check" type="text" placeholder="word, phrase, sentence, or number" autofocus>
+            <input type="submit" value="Check" id="button">
+        </form>
+        <p id="answer"></p>
+    </section>
+    
+    <div id="lists">
+        <section id="my-palindromes" >
+            <h2>Palindrome Results</h2>
+            <ul id="result-list" class="list"></ul>
+        </section>
+        <section id="famous-palindromes">
+            <h2>Examples of Palindromes</h2>
+            <div id="example-lists">
+                <section class="list">
+                    <h3>Words</h3>
+                    <ul>
+                        <li>redivider</li>
+                        <li>deified</li>
+                        <li>civic</li>
+                        <li>radar</li>
+                        <li>level</li>
+                        <li>rotor</li>
+                        <li>kayak</li>
+                        <li>reviver</li>
+                        <li>racecar</li>
+                        <li>madam</li>
+                        <li>refer</li>
+                        <li>mom</li>
+                        <li>noon</li>
+                        <li>rotator</li>
+                        <li>solos</li>
+                        <li>stats</li>
+                        <li>tenet</li>
+                        <li>wow</li>
+                    </ul>
+                </section>
+                <section class="list">
+                    <h3>Sentences and Phrases</h3>
+                    <ul>
+                        <li>Don't nod.</li>
+                        <li>I did, did I?</li>
+                        <li>My gym</li>
+                        <li>Red rum, sir, is murder.</li>
+                        <li>Step on no pets.</li>
+                        <li>Top spot</li>
+                        <li>Was it a cat I saw?</li>
+                        <li>Eva, can I see bees in a cave?</li>
+                        <li>No lemon, no melon</li>
+                        <li>Never odd or even</li>
+                    </ul>
+                </section>
+                <section class="list">
+                    <h3>Names</h3>
+                    <ul>
+                        <li>Hannah</li>
+                        <li>Ava</li>
+                        <li>Anna</li>
+                        <li>Eve</li>
+                        <li>Bob</li>
+                        <li>Otto</li>
+                    </ul>
+                </section>
+            </div>
+    
+        </section>
+    </div>
+    <script src="js/palindrome/palindromeChecker.js"></script>
+    <script src="js/palindrome/palindrome-updater.js"></script>
+    <script>
+        $("form").submit((event => {
+            const testPhrase = $("input:first").val();
+            if (palindromeChecker(testPhrase))
+            {
+                $("#answer").html(`"<em>${testPhrase}</em>" is a palindrome.`);
+                updatePalindromeList(testPhrase);
+                updateResultDisplay();
+            }
+            else
+            {
+                $("#answer").html(`"<em>${testPhrase}</em>" is not a palindrome.`);
+            }
+            event.preventDefault();
+            $("form")[0].reset();
+        }));
+    </script>
+</body>
+</html>

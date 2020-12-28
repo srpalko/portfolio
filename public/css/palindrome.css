@@ -1,0 +1,71 @@
+body {
+    font-family: 'Playfair Display', serif;
+    background-color: rgb(243, 237, 215);
+}
+
+header {
+    text-align: center;
+    font-size: 2em;
+}
+
+input {
+    height: 2em;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5em;
+    border-radius: 10px;
+    margin: .25em;
+}
+
+input:focus {
+    outline: none;
+}
+
+.list {
+    padding: 1em;
+}
+
+#palindrome-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#text-to-check {
+    width: 400px;
+}
+
+#answer {
+    display: block;
+    height: 30px;
+    font-size: 1.5em;
+    border-bottom: 1px inset green;
+    width: 50%;
+}
+
+#lists {
+    display: flex;
+    flex-direction: column;
+}
+
+#my-palindromes {
+    width: 100%;
+}
+
+#result-list {
+    padding: 50px;
+    font-size: 1.5em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    border-top: 1px solid green;
+    border-bottom: 1px solid green;
+}
+
+#example-lists {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#button {
+    background-color: rgba(187, 211, 187, 0.938);
+}
